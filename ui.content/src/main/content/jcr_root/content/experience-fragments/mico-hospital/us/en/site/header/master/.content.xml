@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-12-04T10:59:55.658+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/mico-hospital/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header"
+        sling:resourceType="mico-hospital/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="mico-hospital/components/container"
+            layout="simple">
+            <search
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mico-hospital/components/search"
+                searchRoot="/content/mico-hospital/us"/>
+            <logo/>
+            <top_nav
+                jcr:created="{Date}2024-11-29T17:31:05.714+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-11-29T17:33:39.940+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mico-hospital/components/top-nav"
+                email="mico@hospital.com"
+                location="Sagar, Madhya Pradesh"
+                phone="+91-9867854790"/>
+            <nav_bar
+                jcr:created="{Date}2024-11-29T17:44:36.900+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-12-04T10:59:55.554+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mico-hospital/components/nav-bar"
+                logoAltText="Mico Hospital Logo"
+                logoPath="/content/dam/mico-hospital/images/logo.png">
+                <relatedArticles jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        articleLables="axasccx"
+                        paths="/content/newsportal/us/en/practice-page"
+                        titles="scsdc"/>
+                </relatedArticles>
+                <navItems jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        navItemLink="/content/mico-hospital/us/en/test"
+                        navItemName="Home"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        navItemLink="/content/mico-hospital/us/en/test"
+                        navItemName="About"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        navItemLink="#"
+                        navItemName="Treatment"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        navItemLink="#"
+                        navItemName="Testimonials"/>
+                </navItems>
+            </nav_bar>
+        </root>
+    </jcr:content>
+</jcr:root>

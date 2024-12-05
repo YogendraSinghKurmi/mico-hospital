@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/mico-hospital" mode="merge"/>
+    <filter root="/content/mico-hospital" mode="merge"/>
+    <filter root="/content/dam/mico-hospital" mode="merge">
+        <exclude pattern="/content/dam/mico-hospital(/.*)?"/>
+        <include pattern="/content/dam/mico-hospital/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/mico-hospital/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/mico-hospital" mode="merge"/>
+</workspaceFilter>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2024-12-04T11:04:33.913+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/mico-hospital/settings/wcm/templates/mico-hopital-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="mico-hospital/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="mico-hospital/components/container"
+            layout="responsiveGrid">
+            <experiencefragment_1010684469
+                jcr:created="{Date}2024-12-04T11:04:06.194+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-12-04T11:04:33.910+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mico-hospital/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/mico-hospital/us/en/site/header/master"/>
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mico-hospital/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid">
+                <experiencefragment
+                    jcr:created="{Date}2024-12-04T10:50:36.530+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-12-04T10:50:36.530+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mico-hospital/components/experiencefragment"/>
+            </container>
+            <container_78891160
+                jcr:created="{Date}2024-12-04T10:24:30.578+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-12-04T10:24:30.578+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mico-hospital/components/container"/>
+            <experiencefragment
+                jcr:created="{Date}2024-12-04T10:24:49.121+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-12-04T10:50:17.366+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mico-hospital/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/mico-hospital/us/en/site/footer/master"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

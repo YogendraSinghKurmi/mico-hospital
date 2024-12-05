@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Footer Section Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Tabs"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <address
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Address"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <location
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Location"
+                                name="./location"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Phone"
+                                name="./phone"/>
+                            <email
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Email"
+                                name="./email"/>
+                        </items>
+                    </address>
+                    <usefulLinks
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Useful Links"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <useful-links
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Useful Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./usefulLinks">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <item-link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldLabel="Item Link"
+                                            name="./itemLink"
+                                            rootPath="/content/mico-hospital/us"/>
+                                        <item-name
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Item Name"
+                                            name="./itemName"/>
+                                    </items>
+                                </field>
+                            </useful-links>
+                        </items>
+                    </usefulLinks>
+                    <logo
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Logo"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <logo-path
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Logo Path"
+                                name="./logoPath"
+                                rootPath="/content/dam/mico-hospital"/>
+                            <logo-alt-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Logo Alt Text"
+                                name="./logoAltText"/>
+                        </items>
+                    </logo>
+                    <latestPosts
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Latest Posts Section"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <latestPosts
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Latest Posts">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./latestPosts">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <postImage
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldLabel="Post Image"
+                                            name="./postImage"
+                                            rootPath="/content/dam/mico-hospital/images"/>
+                                        <postTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Post Title"
+                                            name="./postTitle"/>
+                                    </items>
+                                </field>
+                            </latestPosts>
+                        </items>
+                    </latestPosts>
+                    <news
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="News Section"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <news-links
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="News Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./newsLinks">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <newsImage
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldLabel="News Image"
+                                            name="./newsImage"
+                                            rootPath="/content/dam/mico-hospital/images"/>
+                                        <newsTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="News Title"
+                                            name="./newsTitle"/>
+                                    </items>
+                                </field>
+                            </news-links>
+                        </items>
+                    </news>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

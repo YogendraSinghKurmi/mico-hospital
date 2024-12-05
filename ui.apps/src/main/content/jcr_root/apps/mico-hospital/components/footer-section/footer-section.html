@@ -1,0 +1,153 @@
+<!-- info section -->
+<sly data-sly-use.footerSection="com.yogi.mico.hospital.core.models.FooterSectionModel">
+ <section class="info_section ">
+  <div class="container">
+    <div class="info_top">
+      <div class="info_logo">
+        <a href="">
+          <img src="${footerSection.logoPath}" alt="${footerSection.logoAltText}">
+        </a>
+      </div>
+      <div class="info_form">
+        <form action="">
+          <input type="email" placeholder="Your email">
+          <button>
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="info_bottom layout_padding2">
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <h5>
+            Address
+          </h5>
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                ${footerSection.location}
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call ${footerSection.phone}
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>
+                ${footerSection.email}
+              </span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_links">
+            <h5>
+              Useful link
+            </h5>
+            
+            <div class="info_links_menu">
+              <ul data-sly-list="${footerSection.usefulLinks}">
+              <li><a href="${item.itemLink}">
+                ${item.itemName}
+              </a>
+            </li>
+          </ul>
+              <!-- <a class="active" href="index.html">
+                Home
+              </a>
+              <a href="about.html">
+                About
+              </a>
+              <a href="treatment.html">
+                Treatment
+              </a>
+              <a href="doctor.html">
+                Doctors
+              </a>
+              <a href="testimonial.html">
+                Testimonial
+              </a>
+              <a href="contact.html">
+                Contact us
+              </a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_post">
+            <h5>
+              LATEST POSTS
+            </h5>
+            
+            <ul data-sly-list="${footerSection.latestPosts}" style="list-style: none;"> 
+              <li>
+                <div class="post_box">
+                  <div class="img-box">
+                    <img src="${item.postImage}" alt="">
+                  </div>
+                  <p>
+                    ${item.postTitle}
+                  </p>
+                </div>
+              </li>
+              <br>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_post">
+            <h5>
+              News
+            </h5>
+            <ul data-sly-list="${footerSection.newsLinks}" style="list-style: none;">
+              <li>
+                <div class="post_box">
+                  <div class="img-box">
+                  <img src="${item.newsImage}" alt="">
+                </div>
+                <p>
+                  ${item.newsTitle}
+                </p>   
+              </div>
+              <br>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end info_section -->
+
+
+<!-- footer section -->
+<footer class="footer_section">
+  <div class="container">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </div>
+</footer>
+</sly>
+<!-- footer section -->

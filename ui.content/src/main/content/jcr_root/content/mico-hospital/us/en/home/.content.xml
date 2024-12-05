@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-12-04T18:36:10.215+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/mico-hospital/settings/wcm/templates/mico-hopital-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home"
+        sling:resourceType="mico-hospital/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="mico-hospital/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mico-hospital/components/container"
+                layout="responsiveGrid">
+                <customcarousel1
+                    jcr:created="{Date}2024-12-04T11:05:26.392+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-12-04T12:20:45.541+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mico-hospital/components/customCarousel1"
+                    backgroundImage="/content/dam/mico-hospital/images/dots.png"
+                    nextButtonImage="/content/dam/mico-hospital/images/next.png"
+                    prevButtonImage="/content/dam/mico-hospital/images/prev.png">
+                    <slides jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            buttonLink="#"
+                            buttonName="Explore"
+                            sliderContent="If wanna deep dive in the world of mico hospital,&#xd;&#xa;we are ready to welcome you.."
+                            sliderImage="/content/dam/mico-hospital/images/slider-img.jpg"
+                            sliderImageAltText="slide1"/>
+                    </slides>
+                </customcarousel1>
+                <about_section
+                    jcr:created="{Date}2024-12-04T12:40:18.751+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-12-04T15:04:01.504+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mico-hospital/components/about-section"
+                    aboutContent="HDJSHJSDHJKSDJSDJSJDH&#xd;&#xa;LKSDJLKSJDLKJSDLKJS&#xd;&#xa;SKDHKJSDJKSHDJKS&#xd;&#xa;SKJDHKJSDHJSD&#xd;&#xa;DLKSJDLKSJDLKSJD&#xd;&#xa;SKJDHKJSDHKJSHDKJSD&#xd;&#xa;SKJDHKSJDHKJSHDKJS"
+                    buttonName="Know More"
+                    imageAltText="about section Image"
+                    imagePath="/content/dam/mico-hospital/images/about-img.jpg"/>
+                <treatment_section
+                    jcr:created="{Date}2024-12-04T16:19:41.219+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-12-04T18:36:10.211+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mico-hospital/components/treatment-section"
+                    sideImagePath="/content/dam/mico-hospital/images/treatment-side-img.jpg">
+                    <treatments jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            iconImage="/content/dam/mico-hospital/images/t1.png"
+                            iconImageAltText="treatment 1 icon"
+                            treatmentDescription="alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything"
+                            treatmentName="Nephrologist Care"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            iconImage="/content/dam/mico-hospital/images/t2.png"
+                            iconImageAltText="treatment 2 icon"
+                            treatmentDescription="alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything"
+                            treatmentName="Eye Care"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            iconImage="/content/dam/mico-hospital/images/t3.png"
+                            iconImageAltText="treatment 3 icon"
+                            treatmentDescription="alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything"
+                            treatmentName="Pediatrician Clinic"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            iconImage="/content/dam/mico-hospital/images/t4.png"
+                            iconImageAltText="treatment 4 icon"
+                            treatmentDescription="alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything"
+                            treatmentName="Parental Care"/>
+                    </treatments>
+                </treatment_section>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
